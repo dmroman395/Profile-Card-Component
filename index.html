@@ -5,40 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
   
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div id="bg_pattern_top"><img src="./images/bg-pattern-top.svg"></div>
-  <div id="bg_pattern_bottom"><img src="./images/bg-pattern-bottom.svg"></div>
-  <div class="card_component">
-    <div class="card_top"></div>
-    <div class="card_mid">
-      <div class="img_border">
-        <div class="img_container">
-          <img src="./images/image-victor.jpg" alt="User Profile Image">
+  <div id="bg_pattern_top"><img src="./images/bg-pattern-top.svg" width="1300" height="1300"></div>
+  <div id="bg_pattern_bottom"><img src="./images/bg-pattern-bottom.svg" width="1300" height="1300"></div>
+    <div class="card_component">
+      <div class="card_top"></div>
+      <div class="card_mid">
+        <div class="img_border">
+          <div class="img_container">
+            <img src="./images/image-victor.jpg" alt="User Profile Image">
+          </div>
+        </div>
+        <p class="bold">Victor Crest  <span class="grey">26</span></p>
+        <p class="grey small">London</p>
+      </div>
+      <div class="card_bottom">
+        <div class="card_bottom_padding">
+          <div><p class="bold">80K</p><p class="grey smaller">Followers</p></div>
+          <div><p class="bold">803K</p><p class="grey smaller">Likes</p></div>
+          <div><p class="bold">1.4K</p><p class="grey smaller">Photos</p></div>
         </div>
       </div>
-      <p class="bold">Victor Crest  <span class="grey">26</span></p>
-      <p class="grey small">London</p>
     </div>
-    <div class="card_bottom">
-      <div class="card_bottom_padding">
-        <div><p class="bold">80K</p><p class="grey smaller">Followers</p></div>
-        <div><p class="bold">803K</p><p class="grey smaller">Likes</p></div>
-        <div><p class="bold">1.4K</p><p class="grey smaller">Photos</p></div>
-      </div>
-    </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">David Miguel Roman</a>.
-  </div>
 </body>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">David Miguel Roman</a>.
+</footer>
 </html>
