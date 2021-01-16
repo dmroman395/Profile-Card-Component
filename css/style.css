@@ -18,8 +18,6 @@ body {
     position: absolute;
     top: -70%;
     left: -20%;
-    max-width: 100%;
-    height: auto;
 }
 
 #bg_pattern_top img {
@@ -140,26 +138,10 @@ body {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     margin-bottom: 10px;
@@ -167,4 +149,47 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*Mobile View*/
+
+@media only screen and (max-width: 375px) {
+
+    body ,html {
+        max-height: 100% !important;
+        overflow: auto !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #bg_pattern_top {
+        position: absolute;
+        top: -55%;
+        left: -110%;
+    }
+    
+    #bg_pattern_top img {
+        max-width: 622px;
+        height: auto;
+    }
+    
+    #bg_pattern_bottom {
+        position: absolute;
+        bottom: -50%;
+        right: -110%;
+    }
+
+    #bg_pattern_bottom img {
+        max-width: 622px;
+        height: auto;
+    }
+
+    .card_component {
+        border-radius: 15px;
+        height: 374px;
+        width: 320px;
+        background-color: white;
+        z-index: 2;
+        box-shadow: 0px 40px 80px rgba(0, 0, 0, .2);
+    }
 }
