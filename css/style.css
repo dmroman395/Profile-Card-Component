@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 #bg_pattern_top {
@@ -43,7 +44,117 @@ body {
     width: 350px;
     background-color: white;
     z-index: 2;
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, .2);
 }
+
+.card_top {
+    width: 100%;
+    height: 140px;
+    background-image: url("../images/bg-pattern-card.svg");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card_mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    max-height: 140px;
+}
+
+.img_border {
+    background-color: white;
+    border-radius: 100%;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.img_container {
+    border-radius: 100%;
+    height: 95px;
+    width: 95px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_mid p {
+    position: relative;
+    bottom: 40px;
+}
+
+.bold {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.grey {
+    color: grey;
+    font-weight: normal;
+}
+
+.upshift {
+    position: relative;
+    top: -30px;
+}
+
+.downshift {
+    position: relative;
+    top: 5px;
+}
+
+.spaced {
+    margin-left: 10px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.smaller {
+    font-size: 10px;
+    letter-spacing: .2em;
+}
+
+.card_bottom {
+    border-top: 1px #E8E9EC solid;
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px 0 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 86px;
+    max-height: 86px;
+}
+
+.card_bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .attribution {
     font-size: 11px;
